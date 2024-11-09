@@ -6,14 +6,13 @@
 
 :root {
    --font-family: "Poppins", sans-serif;
+   --font-family-mont: "Montserrat", sans-serif;
   --text-lg: bold 32px/125% var(--font-family);
   --text: 400 16px/1.5 var(--font-family);
   --text-md: 400 14px/170% var(--font-family);
   --text-sm: 400 12px/170% var(--font-family);
-}
+  --text-lg: bold 40px/125% var(--font-family-mont);
+  --text-lg-mobile: bold 32px/125% var(--font-family-mont);
 
-body {
-   font: var(--text);
-   color: var(--text-color-secondary);
-   background-color: var(--background-color);
+  --bg-color: #FF9C73;
 }

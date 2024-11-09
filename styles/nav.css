@@ -48,6 +48,8 @@ nav ul {
    font:  var(--text-sm);
    gap: .2rem;
    padding: .5rem;
+   align-items: center;
+   justify-content: center;
 }
 
 
@@ -74,6 +76,15 @@ nav ul {
       font: var(--text-md);
       padding: .2rem;
       gap: 0rem;
+   }
+
+   .register {
+      display: flex;
+      gap: .4rem;
+      padding: .5rem;
+      font: var(--text-md);
+      align-items: center;
+      justify-content: center;
    }
 
 }
