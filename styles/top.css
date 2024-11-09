@@ -28,6 +28,11 @@
    color: white;
 }
 
+#links {
+   display: none;
+   list-style: none;
+}
+
 .image-top img {
    display: flex;
    object-fit: cover;
@@ -66,6 +71,38 @@
    .text-top p:nth-child(2) {
       font: var(--text-lg);
       color: white;
+   }
+
+   #links {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      text-align: center;
+      /* align-items: center; */
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+   }
+
+   #links li {
+      display: flex;
+      align-items: center;
+      gap: .4rem;
+   }
+
+   #links img {
+      width: 1.4rem;
+   }
+
+   #links a {
+      text-decoration: none;
+      color: white;
+      font: var(--text-sm);
+      transition: color 0.3s ease;
+   }
+
+   #links a:hover {
+      color: yellow;
    }
 
    .image-top img {
