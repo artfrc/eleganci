@@ -19,5 +19,9 @@
 }
 
 body{
-   overflow: hidden;
+   overflow-x: hidden;
+}
+
+.icon {
+   width: 1rem
 }

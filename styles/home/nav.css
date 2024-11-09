@@ -40,10 +40,7 @@ nav ul {
    display:  flex;
 }
 
-.login img {
-   width: 1rem;
-}
-
+         
 .register {
    display:  flex;
    font:  var(--text-sm);

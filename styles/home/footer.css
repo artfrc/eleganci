@@ -1,0 +1,14 @@
+footer {
+   display: flex;
+   background-color: #b7a170;
+   justify-content: space-between;
+   padding: 1rem;
+   align-items: center;
+   font: var(--text-md);
+   color: white;
+}
+
+.icons-footer{
+   width: 1.8rem;
+   margin: 0 .5rem;
+}

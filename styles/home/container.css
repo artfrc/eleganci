@@ -1,0 +1,67 @@
+.container {
+   background-color: #e6ded4; /* Bege mais escuro */
+   border-radius: 1rem;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.search-itens {
+   display: flex;
+   background: linear-gradient(135deg, #0079c4, #338ecf); 
+   padding: .3rem;
+   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+   margin-top: .5rem;
+   align-items: center;
+   justify-content: center;
+   gap: .5rem;
+}
+
+.search-itens input {
+   border: none;
+   background-color: transparent;
+   font: var(--text-md);
+   color: white;
+}
+
+.search-itens input::placeholder {
+   color: white;
+   font: var(--text-md);
+}
+
+.search-itens input:focus {
+   outline: none;
+}
+
+.itens {
+   display: flex;
+   gap: 1rem;
+   flex-wrap: wrap;
+   margin-top: .5rem;
+   align-items: center;
+   justify-content: center;
+}
+
+.card {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   font: var(--text-md);
+   padding: .5rem;
+}
+
+.card img {
+   width: 6.5rem;
+   border-radius: .5rem;
+   margin-bottom: .2rem;
+}
+
+@media(width >= 80em) {
+   .card img {
+      width: 9rem;
+   }
+}
+
+
+
+
