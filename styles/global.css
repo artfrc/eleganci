@@ -1,0 +1,19 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --font-family: "Poppins", sans-serif;
+  --text-lg: bold 32px/125% var(--font-family);
+  --text: 400 16px/1.5 var(--font-family);
+  --text-md: 400 14px/170% var(--font-family);
+  --text-sm: 400 12px/170% var(--font-family);
+}
+
+body {
+   font: var(--text);
+   color: var(--text-color-secondary);
+   background-color: var(--background-color);
+}

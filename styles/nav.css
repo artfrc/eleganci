@@ -1,0 +1,79 @@
+#logomarca{
+   display: flex;
+   width: 1.5rem;
+   border-radius: .5rem;
+   transition: transform ease 200ms;
+}
+
+#logomarca:hover {
+   transform: scale(1.5);
+}
+
+nav {
+   background-color: #b7a170;
+   padding: .5rem;
+   display: flex;
+   align-items: center;
+   font: var(--text-lg);
+   justify-content: space-between;
+}
+
+nav a{
+   text-decoration: none;
+   color: white;
+}
+
+nav a:hover {
+   text-decoration: underline;
+}
+
+nav ul {
+   display: flex;
+   align-items: center;
+   font: var(--text-sm);
+   padding: .2rem;
+   gap: .5rem;
+}
+
+.login {
+   display:  flex;
+}
+
+.login img {
+   width: 1rem;
+}
+
+.register {
+   display:  flex;
+   font:  var(--text-sm);
+   gap: .2rem;
+   padding: .5rem;
+}
+
+
+@media(width >= 80em) {
+
+   #logomarca{
+      display: flex;
+      width: 2rem;
+      border-radius: .5rem;
+      transition: transform ease 200ms;
+   }
+
+   nav ul {
+      display: flex;
+      align-items: center;
+      font: var(--text-md);
+      padding: .2rem;
+      gap: 1rem;
+   }
+
+   .login {
+      display: flex;
+      flex-direction: row;
+      font: var(--text-md);
+      padding: .2rem;
+      gap: 0rem;
+   }
+
+}
