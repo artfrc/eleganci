@@ -17,3 +17,7 @@
   --title-mobile: 500 40px/125% var(--font-family-taviraj);
   --text-lg-mobile: 400 32px/125% var(--font-family-taviraj);
 }
+
+body{
+   overflow: hidden;
+}
