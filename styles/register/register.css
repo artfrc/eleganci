@@ -1,0 +1,74 @@
+/* Estilo para reset básico */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: Arial, sans-serif;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   background-color: #f9f9f9;
+}
+
+.register-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #ffffff;
+   padding: 2rem;
+   border-radius: 1rem;
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+   width: 100%;
+   max-width: 450px;
+}
+
+.logo {
+   width: 100px;
+   margin-bottom: 1.5rem;
+}
+
+.register-form {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.register-form label {
+   margin-bottom: 0.5rem;
+   color: #333;
+   font-weight: bold;
+}
+
+.register-form input {
+   padding: 0.75rem;
+   margin-bottom: 1rem;
+   border: 1px solid #ccc;
+   border-radius: 0.5rem;
+   font-size: 1rem;
+   outline: none;
+   transition: border-color 0.3s;
+}
+
+.register-form input:focus {
+   border-color: #b7a170; /* Cor de destaque */
+}
+
+.register-form button {
+   padding: 0.75rem;
+   background-color: #b7a170;
+   color: #ffffff;
+   border: none;
+   border-radius: 0.5rem;
+   font-size: 1rem;
+   font-weight: bold;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+
+.register-form button:hover {
+   background-color: #a08c5a;
+}
