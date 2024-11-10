@@ -1,4 +1,3 @@
-/* Estilo para reset básico */
 * {
    margin: 0;
    padding: 0;
@@ -10,8 +9,9 @@ body {
    display: flex;
    align-items: center;
    justify-content: center;
-   height: 100vh;
+   min-height: 100vh;
    background-color: #f9f9f9;
+   padding: 1rem;
 }
 
 .register-container {
@@ -19,16 +19,16 @@ body {
    flex-direction: column;
    align-items: center;
    background-color: #ffffff;
-   padding: 2rem;
+   padding: 1.5rem; /* Menor padding */
    border-radius: 1rem;
    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
    width: 100%;
-   max-width: 450px;
+   max-width: 450px; /* Menor largura máxima */
 }
 
 .logo {
-   width: 100px;
-   margin-bottom: 1.5rem;
+   width: 80px; /* Reduz o tamanho da logo */
+   margin-bottom: 1rem; /* Menor espaço abaixo da logo */
 }
 
 .register-form {
@@ -38,19 +38,20 @@ body {
 }
 
 .register-form label {
-   margin-bottom: 0.5rem;
+   margin-bottom: 0.4rem;
    color: #333;
    font-weight: bold;
 }
 
 .register-form input {
-   padding: 0.75rem;
-   margin-bottom: 1rem;
+   padding: 0.6rem; /* Reduz o padding dos campos */
+   margin-bottom: 0.8rem; /* Menor margem entre os campos */
    border: 1px solid #ccc;
    border-radius: 0.5rem;
    font-size: 1rem;
    outline: none;
    transition: border-color 0.3s;
+   width: 100%;
 }
 
 .register-form input:focus {
@@ -67,8 +68,69 @@ body {
    font-weight: bold;
    cursor: pointer;
    transition: background-color 0.3s;
+   margin-top: 1rem;
+}
+
+.cep-container {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+}
+
+.cep-container input {
+   flex: 1; /* Faz o campo de CEP ocupar a maior parte do espaço */
+}
+
+.cep-link {
+   font-size: 0.9rem;
+   color: blue;
+   transition: color 0.3s;
 }
 
 .register-form button:hover {
    background-color: #a08c5a;
+}
+
+input.error {
+   border: 2px solid #e74c3c; /* Vermelho para indicar erro */
+   animation: shake 0.3s ease-in-out;
+}
+
+input.success {
+   border: 2px solid #2ecc71; /* Verde para indicar sucesso */
+}
+
+.requirement {
+   display: none; /* Esconde as regras inicialmente */
+   color: #e74c3c; /* Vermelho para requisitos não atendidos */
+   font-size: 0.8rem;
+   margin: 0.2rem 0;
+}
+
+.requirement.valid {
+   color: #2ecc71; /* Verde para requisitos atendidos */
+}
+
+.form-row {
+   display: flex;
+   gap: 0.5rem; /* Reduz o espaço entre os campos */
+   margin-bottom: 0.8rem; /* Menor espaço entre os blocos */
+}
+
+.form-group {
+   flex: 1; /* Faz os campos compartilharem o espaço igualmente */
+}
+
+@media (max-width: 768px) {
+   .form-row {
+      flex-direction: column; /* Coluna para telas menores */
+   }
+}
+
+@keyframes shake {
+   0% { transform: translateX(0); }
+   25% { transform: translateX(-5px); }
+   50% { transform: translateX(5px); }
+   75% { transform: translateX(-5px); }
+   100% { transform: translateX(0); }
 }

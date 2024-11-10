@@ -10,9 +10,9 @@
 
    <div class="register-container">
       <img src="assets/images/logo.jpeg" alt="Logo da Eleganci" class="logo">
-      <form class="register-form">
+      <form class="register-form" autocomplete="off">
          <label for="first-name">Nome</label>
-         <input type="text" id="first-name" name="first-name" placeholder="Digite seu nome" required>
+         <input type="text" id="first-name" name="first-name-unique" placeholder="Digite seu nome" required>
 
          <label for="last-name">Sobrenome</label>
          <input type="text" id="last-name" name="last-name" placeholder="Digite seu sobrenome" required>
@@ -25,13 +25,54 @@
          
          <label for="password">Senha</label>
          <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+         <div id="password-requirements">
+            <p class="requirement" id="length-requirement">✔ Pelo menos 6 caracteres</p>
+            <p class="requirement" id="uppercase-requirement">✔ Pelo menos uma letra maiúscula</p>
+            <p class="requirement" id="number-requirement">✔ Pelo menos um número</p>
+         </div>
 
          <label for="confirm-password">Repetir Senha</label>
          <input type="password" id="confirm-password" name="confirm-password" placeholder="Repita sua senha" required>
+         <p class="requirement" id="confirm-password-message">✔ As senhas devem coincidir</p>
+
+         <!-- Novos Campos -->
+         <label for="cep">CEP</label>
+         <div class="cep-container">
+            <input type="text" id="cep" name="cep" placeholder="Digite seu CEP" required>
+            <a href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank" class="cep-link">Não sei o CEP</a>
+         </div>
+         
+
+
+         <div class="form-row">
+            <div class="form-group">
+               <label for="endereco">Endereço</label>
+               <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço" required>
+            </div>
+
+            <div class="form-group">
+               <label for="numero">Número</label>
+               <input type="text" id="numero" name="numero" placeholder="Nº" required inputmode="numeric" pattern="\d*">
+
+            </div>
+         </div>
+
+         <div class="form-row">
+            <div class="form-group">
+               <label for="cidade">Cidade</label>
+               <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade" required>
+            </div>
+
+            <div class="form-group">
+               <label for="complemento">Complemento</label>
+               <input type="text" id="complemento" name="complemento" placeholder="Complemento (opcional)">
+            </div>
+         </div>
 
          <button type="submit">Cadastrar</button>
       </form>
    </div>
 
+   <script src="scrpits/registerScript.js"></script>
 </body>
 </html>
